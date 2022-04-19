@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SubjectDialog</class>
+ <widget class="QDialog" name="SubjectDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>117</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>315</width>
+    <height>117</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>315</width>
+    <height>117</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Egzamin</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="zasoby.qrc">
+    <normaloff>:/Ikony/icon.ico</normaloff>:/Ikony/icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color: white;
+border:1px solid black;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>295</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+
+font-family: &quot;Calibri&quot;, Times, serif;
+font-size:18px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Wybierz przedmiot do egzaminowania</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="pk">
+           <property name="minimumSize">
+            <size>
+             <width>121</width>
+             <height>41</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+
+border: 3px solid;
+border-radius: 5px;
+border-color:rgb(153, 102, 255);
+
+}
+QPushButton:hover{
+
+border: 5px solid;
+border-color:rgb(153, 102, 255);
+border-radius: 5px;
+background-color:rgb(221, 204, 255);
+}
+QPushButton:pressed{
+
+border: 7px solid purple;
+border-radius: 5px;
+border-color:rgb(0, 0, 0);
+}</string>
+           </property>
+           <property name="text">
+            <string>PK</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ppk">
+           <property name="minimumSize">
+            <size>
+             <width>121</width>
+             <height>41</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+
+border: 3px solid;
+border-radius: 5px;
+border-color: rgb(85, 255, 255);
+}
+
+QPushButton:hover{
+
+border: 5px solid;
+border-color: rgb(85, 255, 255);
+border-radius: 5px;
+background-color:rgb(221, 204, 255);
+}
+QPushButton:pressed{
+
+border: 7px solid aqua;
+border-radius: 5px;
+border-color:rgb(0, 0, 0);
+}</string>
+           </property>
+           <property name="text">
+            <string>PPK</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>17</width>
+           <height>13</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="zasoby.qrc"/>
+ </resources>
+ <connections/>
+</ui>
